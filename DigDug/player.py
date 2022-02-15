@@ -7,6 +7,8 @@ class Player():
         self.player_color = (200, 30, 80)
         self.xpos = 200
         self.ypos = 200
+        self.width = 50
+        self.height = 50
         self.move_right = False
         self.move_left = False
         self.move_up = False
@@ -31,4 +33,4 @@ class Player():
             self.direction = "bottom"
         
     def draw(self):
-        pygame.draw.rect(self.screen, (self.player_color), (self.xpos, self.ypos, 50, 50))
+        pygame.draw.rect(self.screen, (self.player_color), (self.xpos, self.ypos, self.width, self.height))

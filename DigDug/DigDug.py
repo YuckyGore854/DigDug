@@ -14,4 +14,5 @@ player = Player(game_settings, screen) #create player object
 while True: #GAME LOOP
     gf.event_listener(screen, game_settings, player)
     player.update()
+    player.draw()
     gf.update_screen(game_settings, screen, player)
